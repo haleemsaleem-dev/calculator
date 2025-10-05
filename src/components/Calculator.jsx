@@ -28,7 +28,7 @@ const Calculator = () => {
     <div className="flex items-center justify-center h-screen bg-gray-100">
      
       <div className="bg-white p-4 rounded-xl shadow-md w-72">
-        <h1 className="text-center text-2xl font-bold mb-4">Calculator</h1>
+        <h1 className="text-center text-blue-500 text-2xl font-bold mb-4">Calculator</h1>
         <div className="bg-gray-800 text-white text-right p-3 rounded mb-3 text-xl">
           {input || "0"}
         </div>
