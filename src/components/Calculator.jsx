@@ -26,8 +26,9 @@ const Calculator = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1>Calculator</h1>
+     
       <div className="bg-white p-4 rounded-xl shadow-md w-72">
+        <h1 className="text-center text-2xl font-bold mb-4">Calculator</h1>
         <div className="bg-gray-800 text-white text-right p-3 rounded mb-3 text-xl">
           {input || "0"}
         </div>
@@ -35,11 +36,11 @@ const Calculator = () => {
         <div className="grid grid-cols-4 gap-2">
           <button
             onClick={handleClear}
-            className="col-span-2 bg-red-400 p-3 rounded"
+            className="col-span-2 bg-yellow-400 p-3 rounded"
           >
             AC
           </button>
-          <button onClick={handleDelete} className="bg-yellow-400 p-3 rounded">
+          <button onClick={handleDelete} className="bg-red-400 p-3 rounded">
             DEL
           </button>
           <button
