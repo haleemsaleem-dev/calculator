@@ -1,20 +1,7 @@
 import React from "react";
 
-import { CreateShowUsersProvider } from "./context/UserContext";
-import { CreateShowProductsProvider } from "./context/ProductContext";
-import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./router/Router";
+import Calculator from "./components/Calculator";
 
 function App() {
-  return (
-    <CreateShowUsersProvider>
-      <CreateShowProductsProvider>
-        <BrowserRouter>
-          <AppRouter />
-        </BrowserRouter>
-      </CreateShowProductsProvider>
-    </CreateShowUsersProvider>
-  );
+  return <Calculator />;
 }
-
-export default App;
